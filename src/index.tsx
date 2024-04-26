@@ -35,7 +35,7 @@ interface RoomDetal {
 export default function Command() {
   const { data: dataPeople, isLoading: loadingPeople } = useFetch<OverviewResponse>("https://www.st-andrews.ac.uk/library/sentry-api/current-occupancy");
   const { data: dataTime, isLoading: loadingTime } = useFetch<TimeResponse>("https://www.st-andrews.ac.uk/library/sentry-api/average-visit");
-  const { data: dataPC, isLoading: loadingPC } = useFetch<PCResponse>("https://www.st-andrews.ac.uk/pc-availability/rest/4d8283a9-213d-30be-e054-00144ffbdcf6");
+  const { data: dataPC } = useFetch<PCResponse>("https://www.st-andrews.ac.uk/pc-availability/rest/4d8283a9-213d-30be-e054-00144ffbdcf6");
   
   const numberEmojis = ["1️⃣", "2️⃣", "2️⃣", "3️⃣", "4️⃣"];
 
