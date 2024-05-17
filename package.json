@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "libray-occupancy",
+  "name": "st-andrews-main-library-occupancy",
   "title": "Main Library in University of St Andrews",
   "description": "How busy is the main library now?",
   "icon": "command-icon.png",
@@ -10,13 +10,14 @@
     {
       "name": "index",
       "title": "Library Occupancy",
-      "description": "Template with a plain detail view",
+      "description": "How busy is the main library now?",
       "mode": "view"
     }
   ],
   "dependencies": {
     "@raycast/api": "^1.69.0",
-    "@raycast/utils": "^1.14.0"
+    "@raycast/utils": "^1.14.0",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
